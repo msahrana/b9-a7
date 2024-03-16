@@ -1,0 +1,86 @@
+[
+  {
+    "recipe_image": "https://i.ibb.co/znKKZ1j/Chicken-Teriyaki.jpg",
+    "recipe_id": 1,
+    "recipe_name": "Chicken Teriyaki",
+    "short_description": "Juicy grilled chicken glazed with flavorful teriyaki sauce.",
+    "ingredients": [
+      "550 g chicken",
+      "120 ml soy sauce",
+      "200 g basil leaf",
+      "400 g mushroom"
+    ],
+    "preparing_time": "30 min",
+    "calories": "320 calories"
+  },
+  {
+    "recipe_image": "https://i.ibb.co/D50bLrH/Spaghetti-Bolognese.jpg",
+    "recipe_id": 2,
+    "recipe_name": "Spaghetti Bolognese",
+    "short_description": "Classic Italian pasta dish with rich meat sauce.",
+    "ingredients": [
+      "400 g spaghetti",
+      "300 g ground beef",
+      "200 g diced tomatoes",
+      "100 g onions"
+    ],
+    "preparing_time": "45 min",
+    "calories": "450 calories"
+  },
+  {
+    "recipe_image": "https://i.ibb.co/xSNQvT1/Caesar-Salad.png",
+    "recipe_id": 3,
+    "recipe_name": "Caesar Salad",
+    "short_description": "Fresh romaine lettuce tossed with creamy Caesar dressing and croutons.",
+    "ingredients": [
+      "1 head romaine lettuce",
+      "100 g parmesan cheese",
+      "50 g croutons",
+      "50 ml Caesar dressing"
+    ],
+    "preparing_time": "15 min",
+    "calories": "250 calories"
+  },
+  {
+    "recipe_image": "https://i.ibb.co/yX9944z/Margherita-Pizza.jpg",
+    "recipe_id": 4,
+    "recipe_name": "Margherita Pizza",
+    "short_description": "Traditional Italian pizza topped with tomatoes, mozzarella, and basil.",
+    "ingredients": [
+      "300 g pizza dough",
+      "200 g mozzarella cheese",
+      "150 g tomatoes",
+      "10 g fresh basil"
+    ],
+    "preparing_time": "25 min",
+    "calories": "380 calories"
+  },
+  {
+    "recipe_image": "https://i.ibb.co/xYYPyNZ/Beef-Stir-Fry.png",
+    "recipe_id": 5,
+    "recipe_name": "Beef Stir Fry",
+    "short_description": "Tender beef slices stir-fried with colorful vegetables in a savory sauce.",
+    "ingredients": [
+      "400 g beef strips",
+      "200 g bell peppers",
+      "150 g broccoli florets",
+      "100 g carrots"
+    ],
+    "preparing_time": "35 min",
+    "calories": "300 calories"
+  },
+  {
+    "recipe_image": "https://i.ibb.co/6y0KZn2/Sushi-Roll.jpg",
+    "recipe_id": 6,
+    "recipe_name": "Sushi Roll",
+    "short_description": "Delicious sushi roll filled with fresh fish, avocado, and cucumber.",
+    "ingredients": [
+      "300 g sushi rice",
+      "200 g fresh fish (salmon/tuna)",
+      "1 avocado",
+      "100 g cucumber"
+    ],
+    "preparing_time": "50 min",
+    "calories": "280 calories"
+  }
+]
