@@ -19,7 +19,7 @@ const Header = () => {
           </li>
         </ul>
       </div>
-      <div className="flex-none gap-2">
+      <div className="hidden lg:flex-none gap-2">
         <label className="input input-bordered flex items-center gap-2 rounded-full">
           <input type="text" className="grow" placeholder="Search" />
           <svg

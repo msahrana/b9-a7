@@ -1,10 +1,34 @@
+import {useState} from "react";
 import "./App.css";
 import Banner from "./components/Banner/Banner";
 import Cards from "./components/Cards/Cards";
 import Cart from "./components/Cart/Cart";
 import Header from "./components/Header/Header";
+import Swal from "sweetalert2";
 
 function App() {
+  const [carts, setCarts] = useState([]);
+  const [prepare, setPrepare] = useState([]);
+
+  const handleAddToCart = (card) => {
+    const isExist = carts.find((item) => item.recipe_id === card.recipe_id);
+    if (isExist) {
+      Swal.fire({
+        icon: "warning",
+        title: "Sorry",
+        text: "This recipe item already added!",
+      });
+      return;
+    }
+    setCarts([...carts, card]);
+  };
+
+  const handlePreparing = (card) => {
+    const newCart = carts.filter((item) => item.recipe_id !== card.recipe_id);
+    setCarts(newCart);
+    setPrepare([...prepare, card]);
+  };
+
   return (
     <div className="max-w-screen-2xl mx-auto">
       <Header></Header>
@@ -19,9 +43,13 @@ function App() {
           generations of family cooking.
         </p>
       </div>
-      <div className="flex flex-col lg:flex-row gap-10">
-        <Cards></Cards>
-        <Cart></Cart>
+      <div className="flex flex-1 flex-col lg:flex-row gap-10">
+        <Cards handleAddToCart={handleAddToCart}></Cards>
+        <Cart
+          carts={carts}
+          handlePreparing={handlePreparing}
+          prepare={prepare}
+        ></Cart>
       </div>
     </div>
   );

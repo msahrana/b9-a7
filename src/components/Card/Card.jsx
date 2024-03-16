@@ -1,7 +1,7 @@
 import timeImg from "./../../assets/time.png";
 import calorieImg from "./../../assets/calorie.png";
 
-const Card = ({card}) => {
+const Card = ({card, handleAddToCart}) => {
   return (
     <div className="card w-96 bg-base-100 shadow-xl">
       <figure>
@@ -11,14 +11,17 @@ const Card = ({card}) => {
         <h2 className="card-title">{card.recipe_name}</h2>
         <p>{card.short_description}</p>
         <div className="divider"></div>
-        <h2>Ingredients: {card.ingredients.length}</h2>
         <div>
-          <ul>
-            {/* {
-              ingredients.map((items, idx) => <li key={idx} {}></li>)
-            } */}
+          <h2 className="font-bold">Ingredients: {card.ingredients.length}</h2>
+          <ul className="pl-12 rounded-2xl">
+            {card.ingredients.map((item, idx) => (
+              <li key={idx} className="list-disc">
+                ${item}
+              </li>
+            ))}
           </ul>
         </div>
+        <div className="divider"></div>
         <div className="flex justify-between">
           <div className="flex space-x-4">
             <img src={timeImg} alt="" />
@@ -30,7 +33,10 @@ const Card = ({card}) => {
           </div>
         </div>
         <div className="card-actions">
-          <button className="btn bg-[#0be58a] text-xl font-semibold rounded-full border-none">
+          <button
+            onClick={() => handleAddToCart(card)}
+            className="btn bg-[#0be58a] text-xl font-semibold rounded-full border-none"
+          >
             Want to Cook
           </button>
         </div>
