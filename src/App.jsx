@@ -5,6 +5,7 @@ import Cards from "./components/Cards/Cards";
 import Cart from "./components/Cart/Cart";
 import Header from "./components/Header/Header";
 import Swal from "sweetalert2";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [carts, setCarts] = useState([]);
@@ -20,6 +21,7 @@ function App() {
       });
       return;
     }
+    Swal.fire("Recipe item added successfully!");
     setCarts([...carts, card]);
   };
 
@@ -43,6 +45,7 @@ function App() {
           generations of family cooking.
         </p>
       </div>
+      <div className="divider"></div>
       <div className="flex flex-1 flex-col lg:flex-row gap-10">
         <Cards handleAddToCart={handleAddToCart}></Cards>
         <Cart
@@ -51,6 +54,7 @@ function App() {
           prepare={prepare}
         ></Cart>
       </div>
+      <Footer></Footer>
     </div>
   );
 }

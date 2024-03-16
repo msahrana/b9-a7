@@ -2,12 +2,12 @@ import icon from "./../../assets/icon.png";
 
 const Header = () => {
   return (
-    <div className="navbar bg-[#d7ffef]">
+    <div className="navbar flex flex-col lg:flex-row">
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl">Mama Restaurant</a>
+        <a className="btn btn-ghost text-2xl">Ramadan Recipe</a>
       </div>
       <div className="pr-60">
-        <ul className="menu menu-vertical lg:menu-horizontal rounded-box space-x-6">
+        <ul className="menu menu-horizontal rounded-box lg:space-x-6">
           <li>
             <a>Home</a>
           </li>
@@ -17,9 +17,12 @@ const Header = () => {
           <li>
             <a>About</a>
           </li>
+          <li>
+            <a>Search</a>
+          </li>
         </ul>
       </div>
-      <div className="hidden lg:flex-none gap-2">
+      <div className="hidden lg:flex gap-2">
         <label className="input input-bordered flex items-center gap-2 rounded-full">
           <input type="text" className="grow" placeholder="Search" />
           <svg

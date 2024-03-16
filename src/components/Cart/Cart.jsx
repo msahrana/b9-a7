@@ -19,11 +19,11 @@ const Cart = ({carts, handlePreparing, prepare}) => {
             {/* table row*/}
             <tbody>
               {carts.map((items, index) => (
-                <tr className="flex justify-between mt-3" key={index}>
+                <tr className="mt-3" key={index}>
                   <td>{index + 1}</td>
                   <td>{items.recipe_name}</td>
-                  <td>{items.preparing_time}</td>
-                  <td>{items.calories}</td>
+                  <td>{items.preparing_time} min</td>
+                  <td>{items.calories} calories</td>
                   <button
                     onClick={() => handlePreparing(items)}
                     className="btn btn-sm bg-[#0be58a] font-semibold rounded-full border-none"
@@ -54,11 +54,11 @@ const Cart = ({carts, handlePreparing, prepare}) => {
             {/* table row*/}
             <tbody>
               {prepare.map((its, index) => (
-                <tr className="flex justify-between mt-3" key={index}>
+                <tr className="mt-3" key={index}>
                   <th>{index + 1}</th>
                   <td>{its.recipe_name}</td>
-                  <td>{its.preparing_time}</td>
-                  <td>{its.calories}</td>
+                  <td>{its.preparing_time} min</td>
+                  <td>{its.calories} calories</td>
                 </tr>
               ))}
             </tbody>

@@ -10,8 +10,8 @@
       "200 g basil leaf",
       "400 g mushroom"
     ],
-    "preparing_time": 30,
-    "calories": 320
+    "preparing_time": "30 min",
+    "calories": "320 calories"
   },
   {
     "recipe_image": "https://i.ibb.co/D50bLrH/Spaghetti-Bolognese.jpg",
@@ -24,8 +24,8 @@
       "200 g diced tomatoes",
       "100 g onions"
     ],
-    "preparing_time": 45,
-    "calories": 450
+    "preparing_time": "45 min",
+    "calories": "450 calories"
   },
   {
     "recipe_image": "https://i.ibb.co/xSNQvT1/Caesar-Salad.png",
@@ -38,8 +38,8 @@
       "50 g croutons",
       "50 ml Caesar dressing"
     ],
-    "preparing_time": 15,
-    "calories": 250
+    "preparing_time": "15 min",
+    "calories": "250 calories"
   },
   {
     "recipe_image": "https://i.ibb.co/yX9944z/Margherita-Pizza.jpg",
@@ -52,8 +52,8 @@
       "150 g tomatoes",
       "10 g fresh basil"
     ],
-    "preparing_time": 25,
-    "calories": 380
+    "preparing_time": "25 min",
+    "calories": "380 calories"
   },
   {
     "recipe_image": "https://i.ibb.co/xYYPyNZ/Beef-Stir-Fry.png",
@@ -66,8 +66,8 @@
       "150 g broccoli florets",
       "100 g carrots"
     ],
-    "preparing_time": 35,
-    "calories": 300
+    "preparing_time": "35 min",
+    "calories": "300 calories"
   },
   {
     "recipe_image": "https://i.ibb.co/6y0KZn2/Sushi-Roll.jpg",
@@ -80,7 +80,7 @@
       "1 avocado",
       "100 g cucumber"
     ],
-    "preparing_time": 50,
-    "calories": 280
+    "preparing_time": "50 min",
+    "calories": "280 calories"
   }
 ]
