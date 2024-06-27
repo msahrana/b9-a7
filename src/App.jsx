@@ -17,7 +17,7 @@ function App() {
       Swal.fire({
         icon: "warning",
         title: "Sorry",
-        text: "This recipe item already added!",
+        text: "This recipe item already added successfully!",
       });
       return;
     }
